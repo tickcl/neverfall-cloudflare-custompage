@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification - Powered by Cloudflare</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background-color: #0e0e0e;
+      color: #ffffff;
+      font-family: "Raleway", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(to right, #45aaf2 0%, #fc5c65 50%, #fed330 100%);
+      z-index: 1001;
+    }
+
+    .captcha-container {
+      background-color: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .captcha-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .logo span {
+      color: #95B806;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .captcha-box {
+      background-color: #151515;
+      border: 1px solid #2b2b2b;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    .footer {
+      margin-top: 20px;
+      color: #555;
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: #95B806;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Мобільна адаптація */
+    @media (max-width: 768px) {
+      .captcha-container {
+        padding: 20px;
+        max-width: 90%;
+      }
+      .logo {
+        font-size: 24px;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar"></div>
+  <div class="captcha-container">
+    <div class="logo">cloud<span>flare</span></div>
+    <h1>Please Verify</h1>
+    <p>Complete the challenge below to access the site securely.</p>
+    <div class="captcha-box">
+      ::CAPTCHA_BOX::
+    </div>
+    <div class="footer">
+      Protected by <a href="https://www.cloudflare.com" target="_blank">Cloudflare</a> | <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Privacy</a> & <a href="https://www.cloudflare.com/terms/" target="_blank">Terms</a>
+    </div>
+  </div>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+</body>
+</html>
